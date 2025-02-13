@@ -30,16 +30,16 @@
   <datasources>
     <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
       <aliases enabled='yes' />
-      <column caption='Select Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Week&quot;'>
-        <calculation class='tableau' formula='&quot;Week&quot;' />
+      <column caption='Select Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Month&quot;'>
+        <calculation class='tableau' formula='&quot;Month&quot;' />
         <members>
           <member value='&quot;Month&quot;' />
           <member value='&quot;Week&quot;' />
           <member value='&quot;Day&quot;' />
         </members>
       </column>
-      <column caption='Select Metric' datatype='string' name='[Select Period (copy)_1638747359962095620]' param-domain-type='list' role='measure' type='nominal' value='&quot;Volume Fill Rate&quot;'>
-        <calculation class='tableau' formula='&quot;Volume Fill Rate&quot;' />
+      <column caption='Select Metric' datatype='string' name='[Select Period (copy)_1638747359962095620]' param-domain-type='list' role='measure' type='nominal' value='&quot;In Full \%&quot;'>
+        <calculation class='tableau' formula='&quot;In Full %&quot;' />
         <members>
           <member value='&quot;In Full \%&quot;' />
           <member value='&quot;On Time \%&quot;' />
@@ -764,11 +764,11 @@
         <field-sort-custom-order field='city' />
       </field-sort-info>
       <datasource-dependencies datasource='Parameters'>
-        <column caption='Select Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Week&quot;'>
-          <calculation class='tableau' formula='&quot;Week&quot;' />
+        <column caption='Select Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Month&quot;'>
+          <calculation class='tableau' formula='&quot;Month&quot;' />
         </column>
-        <column caption='Select Metric' datatype='string' name='[Select Period (copy)_1638747359962095620]' param-domain-type='list' role='measure' type='nominal' value='&quot;Volume Fill Rate&quot;'>
-          <calculation class='tableau' formula='&quot;Volume Fill Rate&quot;' />
+        <column caption='Select Metric' datatype='string' name='[Select Period (copy)_1638747359962095620]' param-domain-type='list' role='measure' type='nominal' value='&quot;In Full \%&quot;'>
+          <calculation class='tableau' formula='&quot;In Full %&quot;' />
         </column>
       </datasource-dependencies>
       <object-graph>
@@ -1489,11 +1489,11 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Select Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Week&quot;'>
-              <calculation class='tableau' formula='&quot;Week&quot;' />
+            <column caption='Select Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Month&quot;'>
+              <calculation class='tableau' formula='&quot;Month&quot;' />
             </column>
-            <column caption='Select Metric' datatype='string' name='[Select Period (copy)_1638747359962095620]' param-domain-type='list' role='measure' type='nominal' value='&quot;Volume Fill Rate&quot;'>
-              <calculation class='tableau' formula='&quot;Volume Fill Rate&quot;' />
+            <column caption='Select Metric' datatype='string' name='[Select Period (copy)_1638747359962095620]' param-domain-type='list' role='measure' type='nominal' value='&quot;In Full \%&quot;'>
+              <calculation class='tableau' formula='&quot;In Full %&quot;' />
             </column>
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.0yhh12j0hs14oh1dv676c1rdy8t4'>
@@ -1571,7 +1571,7 @@
         <style>
           <style-rule element='axis'>
             <encoding attr='space' class='0' field='[federated.0yhh12j0hs14oh1dv676c1rdy8t4].[usr:Calculation_1638747359962935301:qk]' field-type='quantitative' major-origin='20.0' major-spacing='5.0' scope='rows' type='space' />
-            <format attr='title' class='0' field='[federated.0yhh12j0hs14oh1dv676c1rdy8t4].[usr:Calculation_1638747359962935301:qk]' scope='rows' value='Volume Fill Rate' />
+            <format attr='title' class='0' field='[federated.0yhh12j0hs14oh1dv676c1rdy8t4].[usr:Calculation_1638747359962935301:qk]' scope='rows' value='In Full %' />
             <format attr='stroke-size' scope='cols' value='0' />
             <format attr='line-visibility' scope='cols' value='off' />
             <format attr='tick-color' scope='cols' value='#00000000' />
@@ -2565,16 +2565,16 @@
         <datasource caption='customers+ (mart)' name='federated.0yhh12j0hs14oh1dv676c1rdy8t4' />
       </datasources>
       <datasource-dependencies datasource='Parameters'>
-        <column caption='Select Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Week&quot;'>
-          <calculation class='tableau' formula='&quot;Week&quot;' />
+        <column caption='Select Period' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Month&quot;'>
+          <calculation class='tableau' formula='&quot;Month&quot;' />
           <members>
             <member value='&quot;Month&quot;' />
             <member value='&quot;Week&quot;' />
             <member value='&quot;Day&quot;' />
           </members>
         </column>
-        <column caption='Select Metric' datatype='string' name='[Select Period (copy)_1638747359962095620]' param-domain-type='list' role='measure' type='nominal' value='&quot;Volume Fill Rate&quot;'>
-          <calculation class='tableau' formula='&quot;Volume Fill Rate&quot;' />
+        <column caption='Select Metric' datatype='string' name='[Select Period (copy)_1638747359962095620]' param-domain-type='list' role='measure' type='nominal' value='&quot;In Full \%&quot;'>
+          <calculation class='tableau' formula='&quot;In Full %&quot;' />
           <members>
             <member value='&quot;In Full \%&quot;' />
             <member value='&quot;On Time \%&quot;' />
@@ -2881,7 +2881,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='37'>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+    <window class='dashboard' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Customer-wise Metrics'>
           <zoom type='fit-width' />
@@ -2920,8 +2920,34 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='63' />
+      <active id='18' />
       <simple-id uuid='{62BAD731-D076-4E86-9670-ADD48F6FBB69}' />
+    </window>
+    <window class='worksheet' maximized='true' name='In Full KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{24055136-D922-4355-A13F-6CC6F02D56CD}' />
     </window>
     <window class='worksheet' hidden='true' name='Customer-wise Metrics'>
       <cards>
@@ -2949,32 +2975,6 @@
         <zoom type='fit-width' />
       </viewpoint>
       <simple-id uuid='{2DA019CB-8157-43E6-99DC-4DF6450B4F81}' />
-    </window>
-    <window class='worksheet' hidden='true' name='In Full KPI'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='title' />
-          </strip>
-        </edge>
-      </cards>
-      <viewpoint>
-        <zoom type='entire-view' />
-      </viewpoint>
-      <simple-id uuid='{24055136-D922-4355-A13F-6CC6F02D56CD}' />
     </window>
     <window class='worksheet' hidden='true' name='Line Fill Rate - Product'>
       <cards>
